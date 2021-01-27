@@ -34,6 +34,22 @@ namespace EFCoreAsp2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "12298@qq.com",
+                            Major = 2,
+                            Name = "张三"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Email = "9564431594@qq.com",
+                            Major = 3,
+                            Name = "王五"
+                        });
                 });
 #pragma warning restore 612, 618
         }
